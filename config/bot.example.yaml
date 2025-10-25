@@ -1,0 +1,18 @@
+admins:
+  # Telegram user IDs who can use all commands on all areas
+  - 123456789
+
+areas:
+  office:
+    members: [123456789, 987654321]
+    commands: [status, env, open_door]
+  server:
+    members: [123456789]
+    commands: [status, env]
+  bedroom:
+    members: [123456789]
+    commands: [status, env]
+
+# Optional: command defaults if not specified per area
+defaults:
+  commands: [status, env]
